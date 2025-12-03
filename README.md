@@ -252,9 +252,6 @@ truffle test
 
 欢迎提交 Pull Request 和 Issue。
 
-## 👤 作者
-
-- **iNDicat0r** - hosseini.mobin@gmail.com
 
 ## 📄 许可证
 
