@@ -1,0 +1,657 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenOfOwnerByIndex",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "exists",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenByIndex",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_uri",
+						"type": "string"
+					}
+				],
+				"name": "addDeedMetadata",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "_uri",
+						"type": "string"
+					}
+				],
+				"name": "registerDeed",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"name": "_symbol",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_by",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "DeedRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_approved",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"addDeedMetadata(uint256,string)": {
+					"details": "公共函数用于向Deed添加元数据\r",
+					"params": {
+						"_tokenId": "表示特定Deed\r",
+						"_uri": "描述给定Deed特征的文本\r"
+					},
+					"return": "Deed元数据是否被添加到仓库\r"
+				},
+				"approve(address,uint256)": {
+					"details": "Approves another address to transfer the given token ID\rThe zero address indicates there is no approved address.\rThere can only be one approved address per token at a given time.\rCan only be called by the token owner or an approved operator.\r",
+					"params": {
+						"_to": "address to be approved for the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be approved\r"
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address\r",
+					"params": {
+						"_owner": "address to query the balance of\r"
+					},
+					"return": "uint256 representing the amount owned by the passed address\r"
+				},
+				"exists(uint256)": {
+					"details": "Returns whether the specified token exists\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the existance of\r"
+					},
+					"return": "whether the token exists\r"
+				},
+				"getApproved(uint256)": {
+					"details": "Gets the approved address for a token ID, or zero if no address set\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the approval of\r"
+					},
+					"return": "address currently approved for a the given token ID\r"
+				},
+				"isApprovedForAll(address,address)": {
+					"details": "Tells whether an operator is approved by a given owner\r",
+					"params": {
+						"_operator": "operator address which you want to query the approval of\r",
+						"_owner": "owner address which you want to query the approval of\r"
+					},
+					"return": "bool whether the given operator is approved by the given owner\r"
+				},
+				"name()": {
+					"details": "Gets the token name\r",
+					"return": "string representing the token name\r"
+				},
+				"ownerOf(uint256)": {
+					"details": "Gets the owner of the specified token ID\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query the owner of\r"
+					},
+					"return": "owner address currently marked as the owner of the given token ID\r"
+				},
+				"registerDeed(uint256,string)": {
+					"details": "公共函数用于注册新Deed\r调用ERC721Token Minter\r",
+					"params": {
+						"_tokenId": "uint256 表示特定Deed\r",
+						"_uri": "string 包含元数据/uri\r"
+					}
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"details": "Safely transfers the ownership of a given token ID to another address\rIf the target address is a contract, it must implement `onERC721Received`,\r which is called upon a safe transfer, and return the magic value\r `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`; otherwise,\r the transfer is reverted.\rRequires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"details": "Safely transfers the ownership of a given token ID to another address\rIf the target address is a contract, it must implement `onERC721Received`,\r which is called upon a safe transfer, and return the magic value\r `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`; otherwise,\r the transfer is reverted.\rRequires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_data": "bytes data to send along with a safe transfer check\r",
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				},
+				"setApprovalForAll(address,bool)": {
+					"details": "Sets or unsets the approval of a given operator\rAn operator is allowed to transfer all tokens of the sender on their behalf\r",
+					"params": {
+						"_approved": "representing the status of the approval to be set\r",
+						"_to": "operator address to set the approval\r"
+					}
+				},
+				"symbol()": {
+					"details": "Gets the token symbol\r",
+					"return": "string representing the token symbol\r"
+				},
+				"tokenByIndex(uint256)": {
+					"details": "Gets the token ID at a given index of all the tokens in this contract\rReverts if the index is greater or equal to the total number of tokens\r",
+					"params": {
+						"_index": "uint256 representing the index to be accessed of the tokens list\r"
+					},
+					"return": "uint256 token ID at the given index of the tokens list\r"
+				},
+				"tokenOfOwnerByIndex(address,uint256)": {
+					"details": "Gets the token ID at a given index of the tokens list of the requested owner\r",
+					"params": {
+						"_index": "uint256 representing the index to be accessed of the requested tokens list\r",
+						"_owner": "address owning the tokens list to be accessed\r"
+					},
+					"return": "uint256 token ID at the given index of the tokens list owned by the requested address\r"
+				},
+				"tokenURI(uint256)": {
+					"details": "Returns an URI for a given token ID\rThrows if the token ID does not exist. May return an empty string.\r",
+					"params": {
+						"_tokenId": "uint256 ID of the token to query\r"
+					}
+				},
+				"totalSupply()": {
+					"details": "Gets the total amount of tokens stored by the contract\r",
+					"return": "uint256 representing the total amount of tokens\r"
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfers the ownership of a given token ID to another address\rUsage of this method is discouraged, use `safeTransferFrom` whenever possible\rRequires the msg sender to be the owner, approved, or operator\r",
+					"params": {
+						"_from": "current owner of the token\r",
+						"_to": "address to receive the ownership of the given token ID\r",
+						"_tokenId": "uint256 ID of the token to be transferred\r"
+					}
+				}
+			},
+			"title": "ERC721 Deeds仓库\r 这个合约包含用户注册的Deeds列表。\r 这是一个演示，展示如何将tokens（Deeds）mint并添加到仓库中。\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DeedRepository.sol": "DeedRepository"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DeedRepository.sol": {
+			"keccak256": "0x167c375638b91ea3e3581111c0695057db78462e35f515c966b8a8db13f2d466",
+			"urls": [
+				"bzzr://238b07f860ead5ef96fccf638bacf49040ff8d63c069c22b51c5f91f424d025d"
+			]
+		},
+		"contracts/ERC721/DeprecatedERC721.sol": {
+			"keccak256": "0xc24a723932777db1cf6ab9eda1014506600009f5ac43db5f17b46c4fba48af61",
+			"urls": [
+				"bzzr://fbccf92906e777142880dd53355c5c62cf9b4c764aef0078d910edb8a6f0f632"
+			]
+		},
+		"contracts/ERC721/ERC721.sol": {
+			"keccak256": "0xa06ea8bbdc285d92a49cad29112d4f1ed27a5e8888fd3ff5399f7e56b634d540",
+			"urls": [
+				"bzzr://07b6d2bfba1692918f7ae873681ffc382d7f5c94532455c01f73e7f19f8bfb97"
+			]
+		},
+		"contracts/ERC721/ERC721Basic.sol": {
+			"keccak256": "0x0505fa705a5c49b0ae55e0accdd407e3059c2ba49f1252f3ece8b1059aa219e0",
+			"urls": [
+				"bzzr://a33ccda262c20f57a4671e544f89b7483eb0f31437ee8115805be1233780e135"
+			]
+		},
+		"contracts/ERC721/ERC721BasicToken.sol": {
+			"keccak256": "0x6f3ea40794410060ae70d7c38be0a0ad171b1121b7babf1a23223b2b88ec0a0e",
+			"urls": [
+				"bzzr://29ec5f2d16846ca1844fec1f19818ab1b85846dc3cdba68093c1b12f07ca2584"
+			]
+		},
+		"contracts/ERC721/ERC721Receiver.sol": {
+			"keccak256": "0xb1bd5005d76b9f4fe46776ab6e8ca0c12ee34077dd0a9d8be5e1c5f1e87029b7",
+			"urls": [
+				"bzzr://d70ebc6a429bc55aea9498a128e6efcc07db3b167ec8f69b8db5bb612c041329"
+			]
+		},
+		"contracts/ERC721/ERC721Token.sol": {
+			"keccak256": "0xd7d5797e13bfe4c3089dcd4de365e5e71f4fba7ddc208810f433e4cd637a9cbc",
+			"urls": [
+				"bzzr://e6293f638eaa82ea0101a3aa88d310d3650ca7dca6ac5f20eaa423a5035cc058"
+			]
+		},
+		"contracts/utils/AddressUtils.sol": {
+			"keccak256": "0xaad444ccfd3f070af53d84ed48796a780599f548bf9df5b3e294e4fca223dded",
+			"urls": [
+				"bzzr://d58c277281bdf8609fbb1f55e6bd7e086c4ce409d90d5912a3913f178f021fc7"
+			]
+		},
+		"contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0x9c1fd05e0bff307ff5d6c3074a4aa2468f3c44635785dd2e711620f87bdd9632",
+			"urls": [
+				"bzzr://7ed4582fe96274d35845062b8534aee7b4c503b907276621e48886d481c14b17"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,560 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "getAuctionById",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "blockDeadline",
+						"type": "uint256"
+					},
+					{
+						"name": "startPrice",
+						"type": "uint256"
+					},
+					{
+						"name": "metadata",
+						"type": "string"
+					},
+					{
+						"name": "deedId",
+						"type": "uint256"
+					},
+					{
+						"name": "deedRepositoryAddress",
+						"type": "address"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "active",
+						"type": "bool"
+					},
+					{
+						"name": "finalized",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "bidOnAuction",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "getBidsCount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "auctions",
+				"outputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "blockDeadline",
+						"type": "uint256"
+					},
+					{
+						"name": "startPrice",
+						"type": "uint256"
+					},
+					{
+						"name": "metadata",
+						"type": "string"
+					},
+					{
+						"name": "deedId",
+						"type": "uint256"
+					},
+					{
+						"name": "deedRepositoryAddress",
+						"type": "address"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "active",
+						"type": "bool"
+					},
+					{
+						"name": "finalized",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "auctionBids",
+				"outputs": [
+					{
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "cancelAuction",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getCount",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAuctionsOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "auctionOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAuctionsCountOfOwner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "getCurrentBid",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_deedRepositoryAddress",
+						"type": "address"
+					},
+					{
+						"name": "_deedId",
+						"type": "uint256"
+					},
+					{
+						"name": "_auctionTitle",
+						"type": "string"
+					},
+					{
+						"name": "_metadata",
+						"type": "string"
+					},
+					{
+						"name": "_startPrice",
+						"type": "uint256"
+					},
+					{
+						"name": "_blockDeadline",
+						"type": "uint256"
+					}
+				],
+				"name": "createAuction",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "finalizeAuction",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "BidSuccess",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "AuctionCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "AuctionCanceled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "_auctionId",
+						"type": "uint256"
+					}
+				],
+				"name": "AuctionFinalized",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"bidOnAuction(uint256)": {
+					"details": "出价者在拍卖上出价\r拍卖应该是活跃的，并且未结束\r如果有新的有效出价，退还上一个出价者\r",
+					"params": {
+						"_auctionId": "uint 创建的拍卖的ID\r"
+					}
+				},
+				"cancelAuction(uint256)": {
+					"details": "由所有者取消正在进行的拍卖\r代币将被转移回拍卖所有者\r出价者将获得初始金额的退款\r",
+					"params": {
+						"_auctionId": "uint 创建的拍卖的ID\r"
+					}
+				},
+				"createAuction(address,uint256,string,string,uint256,uint256)": {
+					"details": "使用给定的信息创建拍卖\r",
+					"params": {
+						"_auctionTitle": "string 包含拍卖标题的字符串\r",
+						"_blockDeadline": "uint 拍卖结束的时间戳\r",
+						"_deedId": "uint256 在DeedRepository中注册的代币\r",
+						"_deedRepositoryAddress": "DeedRepository合约的地址\r",
+						"_metadata": "string 包含拍卖元数据的字符串\r",
+						"_startPrice": "uint256 拍卖的起始价格\r"
+					},
+					"return": "bool 拍卖是否已创建\r"
+				},
+				"finalizeAuction(uint256)": {
+					"details": "完成已结束的拍卖\r拍卖应该已结束，并且至少有一个出价\r成功后，代币将被转移到出价者，拍卖所有者获得金额\r",
+					"params": {
+						"_auctionId": "uint 创建的拍卖的ID\r"
+					}
+				},
+				"getAuctionById(uint256)": {
+					"details": "获取给定拍卖的信息，这些信息存储在结构体中\r",
+					"params": {
+						"_auctionId": "uint 拍卖的ID\r"
+					},
+					"return": "string 拍卖的名称\ruint256 拍卖结束的时间戳\ruint256 拍卖的起始价格\rstring 代表拍卖的元数据\ruint256 在DeedRepository中注册的代币ID\raddress DeedRepository的地址\raddress 拍卖的所有者\rbool 拍卖是否活跃\rbool 拍卖是否已完成\r"
+				},
+				"getAuctionsCountOfOwner(address)": {
+					"details": "获取地址拥有的拍卖总数\r",
+					"params": {
+						"_owner": "所有者的地址\r"
+					},
+					"return": "uint 拍卖的总数\r"
+				},
+				"getAuctionsOf(address)": {
+					"details": "获取拥有的拍卖数组\r",
+					"params": {
+						"_owner": "拍卖所有者的地址\r"
+					}
+				},
+				"getBidsCount(uint256)": {
+					"details": "获取给定拍卖的出价数量\r",
+					"params": {
+						"_auctionId": "uint 拍卖的ID\r"
+					}
+				},
+				"getCount()": {
+					"details": "获取拍卖的数量\r",
+					"return": "uint 代表拍卖的数量\r"
+				},
+				"getCurrentBid(uint256)": {
+					"details": "获取拥有的拍卖数组\r",
+					"params": {
+						"_auctionId": "uint 拍卖的所有者\r"
+					},
+					"return": "amount uint256, 最后出价者的地址\r"
+				}
+			},
+			"title": "拍卖仓库\r 这个合约允许为非同质化代币创建拍卖\r 它还包括拍卖行的基本功能\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AuctionRepositorty.sol": "AuctionRepository"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AuctionRepositorty.sol": {
+			"keccak256": "0x37b6694785a9d7fc46d1128b8a580aea601b7dda546cc1183d3eaefabed296e7",
+			"urls": [
+				"bzzr://5624d48fd613f85bbf91b8a93c82269f0083c45f985c2f55fe14e538afb1c1d2"
+			]
+		},
+		"contracts/DeedRepository.sol": {
+			"keccak256": "0x167c375638b91ea3e3581111c0695057db78462e35f515c966b8a8db13f2d466",
+			"urls": [
+				"bzzr://238b07f860ead5ef96fccf638bacf49040ff8d63c069c22b51c5f91f424d025d"
+			]
+		},
+		"contracts/ERC721/DeprecatedERC721.sol": {
+			"keccak256": "0xc24a723932777db1cf6ab9eda1014506600009f5ac43db5f17b46c4fba48af61",
+			"urls": [
+				"bzzr://fbccf92906e777142880dd53355c5c62cf9b4c764aef0078d910edb8a6f0f632"
+			]
+		},
+		"contracts/ERC721/ERC721.sol": {
+			"keccak256": "0xa06ea8bbdc285d92a49cad29112d4f1ed27a5e8888fd3ff5399f7e56b634d540",
+			"urls": [
+				"bzzr://07b6d2bfba1692918f7ae873681ffc382d7f5c94532455c01f73e7f19f8bfb97"
+			]
+		},
+		"contracts/ERC721/ERC721Basic.sol": {
+			"keccak256": "0x0505fa705a5c49b0ae55e0accdd407e3059c2ba49f1252f3ece8b1059aa219e0",
+			"urls": [
+				"bzzr://a33ccda262c20f57a4671e544f89b7483eb0f31437ee8115805be1233780e135"
+			]
+		},
+		"contracts/ERC721/ERC721BasicToken.sol": {
+			"keccak256": "0x6f3ea40794410060ae70d7c38be0a0ad171b1121b7babf1a23223b2b88ec0a0e",
+			"urls": [
+				"bzzr://29ec5f2d16846ca1844fec1f19818ab1b85846dc3cdba68093c1b12f07ca2584"
+			]
+		},
+		"contracts/ERC721/ERC721Receiver.sol": {
+			"keccak256": "0xb1bd5005d76b9f4fe46776ab6e8ca0c12ee34077dd0a9d8be5e1c5f1e87029b7",
+			"urls": [
+				"bzzr://d70ebc6a429bc55aea9498a128e6efcc07db3b167ec8f69b8db5bb612c041329"
+			]
+		},
+		"contracts/ERC721/ERC721Token.sol": {
+			"keccak256": "0xd7d5797e13bfe4c3089dcd4de365e5e71f4fba7ddc208810f433e4cd637a9cbc",
+			"urls": [
+				"bzzr://e6293f638eaa82ea0101a3aa88d310d3650ca7dca6ac5f20eaa423a5035cc058"
+			]
+		},
+		"contracts/utils/AddressUtils.sol": {
+			"keccak256": "0xaad444ccfd3f070af53d84ed48796a780599f548bf9df5b3e294e4fca223dded",
+			"urls": [
+				"bzzr://d58c277281bdf8609fbb1f55e6bd7e086c4ce409d90d5912a3913f178f021fc7"
+			]
+		},
+		"contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0x9c1fd05e0bff307ff5d6c3074a4aa2468f3c44635785dd2e711620f87bdd9632",
+			"urls": [
+				"bzzr://7ed4582fe96274d35845062b8534aee7b4c503b907276621e48886d481c14b17"
+			]
+		}
+	},
+	"version": 1
+}

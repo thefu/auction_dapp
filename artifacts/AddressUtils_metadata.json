@@ -1,0 +1,36 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/utils/AddressUtils.sol": "AddressUtils"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/utils/AddressUtils.sol": {
+			"keccak256": "0xaad444ccfd3f070af53d84ed48796a780599f548bf9df5b3e294e4fca223dded",
+			"urls": [
+				"bzzr://d58c277281bdf8609fbb1f55e6bd7e086c4ce409d90d5912a3913f178f021fc7"
+			]
+		}
+	},
+	"version": 1
+}
